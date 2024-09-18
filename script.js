@@ -1,31 +1,36 @@
-//complete this code
+// Define the Person class
 class Person {
-	constructor(name, age){
+	constructor(name, age) {
 		this._name = name;
 		this._age = age;
 	}
 
-	get name(){
+	// Getter for name
+	get name() {
 		return this._name;
 	}
 
-	set age(newAge){
+	// Setter for age
+	set age(newAge) {
 		this._age = newAge;
 	}
 
-	get age(){
+	// Getter for age
+	get age() {
 		return this._age;
 	}
 }
 
+// Define the Student subclass
 class Student extends Person {
-	study(){
-		console.log(`${this.name} is studying)`;
+	study() {
+		console.log(`${this.name} is studying`);
 	}
 }
 
+// Define the Teacher subclass
 class Teacher extends Person {
-	teach(){
+	teach() {
 		console.log(`${this.name} is teaching`);
 	}
 }

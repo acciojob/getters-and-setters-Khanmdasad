@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -7,11 +6,28 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-	<h1> Person, Student, and Teacher Example </h1>
-	
-    <script type="text/javascript" src="./script.js">
-</script>
+	<h1>Person, Student, and Teacher Example</h1>
+
+	<!-- Creating instances of Student and Teacher and demonstrating their methods -->
+	<script type="text/javascript" src="./script.js"></script>
+
+	<script>
+		// Create instances and demonstrate their functionality
+		const student = new Student('Alice', 22);
+		const teacher = new Teacher('Bob', 40);
+
+		// Output to the console
+		student.study();  // Output: Alice is studying
+		teacher.teach();  // Output: Bob is teaching
+
+		// Demonstrate getter and setter
+		console.log(student.name);  // Output: Alice
+		console.log(teacher.name);  // Output: Bob
+
+		// Change age using setter and display updated age
+		student.age = 23;
+		console.log(student.age);  // Output: 23
+	</script>
 
 </body>
 
